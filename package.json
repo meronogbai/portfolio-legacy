@@ -41,6 +41,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.3",
     "tailwindcss": "^2.0.2"
   }
 }
