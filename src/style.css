@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-media-links a {
+  @apply text-blue-800 mr-3;
+}
