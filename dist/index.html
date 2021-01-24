@@ -9,11 +9,13 @@
 
 <body class="text-gray-900">
   <nav class="flex justify-between items-center">
-    <i class="fas fa-laptop-code fa-2x text-blue-800"></i>
+    <a href="#">
+      <i class="fas fa-laptop-code fa-2x text-blue-800"></i>
+    </a>
     <div class="flex justify-end">
       <a class="mx-2" href="#projects">Projects</a>
       <a class="mx-2" href="#about">About</a>
-      <a class="mx-2" href="#contact-form">Contact</a>
+      <a class="mx-2" href="#contact">Contact</a>
     </div>
   </nav>
   <main class="mt-2">
@@ -144,13 +146,19 @@
       </ul>
     </section>
     <section id="contact" class="bg-blue-800 text-white mt-3">
-      <h2 class="text-2xl font-bold py-6 text-center">
+      <h2 class="text-2xl font-bold pb- text-center">
         Contact me
       </h2>
-      <p>
+      <p class="py-3">
         If you need help with developing a project or a
         feature, I would love to help you with it.
       </p>
+      <form action="" method="post" class="grid gap-3 text-gray-900">
+        <input class="p-3" type="text" name="name" id="name" placeholder="Full Name*" required" />
+        <input class="p-3" type="email" name="email" id="email" placeholder="Email*" required" />
+        <textarea class="p-3" name="message" id="message" placeholder="Message" required"></textarea>
+        <input type="submit" value="Get in Touch" class="bg-gray-900 block py-2 w-full rounded text-white" />
+      </form>
     </section>
   </main>
   <script src="bundle.js"></script>
