@@ -11,8 +11,8 @@ section {
 
 /* Intro */
 
-.social-media-links a {
-  @apply text-blue-800 mr-3;
+#intro .social-media-links a {
+  @apply text-blue-800;
 }
 
 /* Projects */
