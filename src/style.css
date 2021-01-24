@@ -5,3 +5,17 @@
 .social-media-links a {
   @apply text-blue-800 mr-3;
 }
+
+.project {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/first-app.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+
+  @apply p-3;
+}
+
+.project h3 {
+  @apply font-extrabold text-white;
+}
