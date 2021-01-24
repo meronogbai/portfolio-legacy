@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Intro */
+
 .social-media-links a {
   @apply text-blue-800 mr-3;
 }
+
+/* Projects */
 
 .first-project {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/first-app.jpg');
@@ -36,4 +40,14 @@
 
 #projects button {
   @apply bg-blue-800 text-white text-center w-full py-1 rounded my-3;
+}
+
+/* About */
+
+#about h3 {
+  @apply text-xl font-semibold py-3;
+}
+
+#about li {
+  @apply inline-block mr-2 text-gray-800;
 }
