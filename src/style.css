@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* General */
+
+nav,
+section {
+  @apply p-6;
+}
+
 /* Intro */
 
 .social-media-links a {
