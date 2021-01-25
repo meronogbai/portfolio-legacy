@@ -5,7 +5,7 @@
 /* General */
 
 section {
-  @apply p-6;
+  @apply px-6 pt-16 pb-6;
 }
 
 /* Intro */
