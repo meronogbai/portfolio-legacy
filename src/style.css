@@ -4,7 +4,6 @@
 
 /* General */
 
-nav,
 section {
   @apply p-6;
 }

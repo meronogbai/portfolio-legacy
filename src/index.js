@@ -37,6 +37,7 @@ const injectDetails = (modalBody) => {
   return details;
 };
 
+const nav = document.querySelector('nav');
 const modalBtns = document.querySelectorAll('.modal-btn');
 
 modalBtns.forEach(modalBtn => {
@@ -66,4 +67,12 @@ modalBtns.forEach(modalBtn => {
     });
     document.body.append(modalBg);
   });
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    nav.classList.remove('shadow');
+  } else {
+    nav.classList.add('shadow');
+  }
 });
