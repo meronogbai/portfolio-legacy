@@ -1,5 +1,4 @@
 import './style.css';
-import '@fortawesome/fontawesome-free/js/all';
 
 const injectDetails = (modalBody) => {
   const details = document.createElement('div');
