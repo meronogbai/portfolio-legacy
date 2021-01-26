@@ -4,6 +4,10 @@
 
 /* General */
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   @apply px-6 pt-16 pb-6;
 }
