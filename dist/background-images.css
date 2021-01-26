@@ -1,0 +1,15 @@
+.first-project {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/first-app.jpg');
+}
+
+.second-project {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/second-app.jpg');
+}
+
+.third-project {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/third-app.png');
+}
+
+.fourth-project {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/fourth-app.jpg');
+}
