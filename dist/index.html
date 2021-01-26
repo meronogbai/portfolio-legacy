@@ -61,45 +61,47 @@
     </section>
     <section id="projects">
       <h2 class="text-2xl font-bold py-3">Projects</h2>
-      <article>
-        <div class="project first-project">
-          <h3>Group Payments</h3>
-        </div>
-        <ul class="project-skills">
-          <li>Rails</li>
-          <li>Bootstrap</li>
-        </ul>
-        <button class="modal-btn">See the project</button>
-      </article>
-      <article>
-        <div class="project second-project">
-          <h3>Panda Runner</h3>
-        </div>
-        <ul class="project-skills">
-          <li>Javascript</li>
-          <li>Phaser</li>
-        </ul>
-        <button class="modal-btn">See the project</button>
-      </article>
-      <article>
-        <div class="project third-project">
-          <h3>Microverse Linters Setup</h3>
-        </div>
-        <ul class="project-skills">
-          <li>Bash</li>
-        </ul>
-        <button class="modal-btn">See the project</button>
-      </article>
-      <article>
-        <div class="project fourth-project">
-          <h3>Course Directory</h3>
-        </div>
-        <ul class="project-skills">
-          <li>HTML</li>
-          <li>Sass</li>
-        </ul>
-        <button class="modal-btn">See the project</button>
-      </article>
+      <div class="grid lg:grid-cols-2 lg:gap-x-3">
+        <article class="lg:col-span-1">
+          <div class="project first-project">
+            <h3>Group Payments</h3>
+          </div>
+          <ul class="project-skills">
+            <li>Rails</li>
+            <li>Bootstrap</li>
+          </ul>
+          <button class="modal-btn">See the project</button>
+        </article>
+        <article class="lg:col-span-1">
+          <div class="project second-project">
+            <h3>Panda Runner</h3>
+          </div>
+          <ul class="project-skills">
+            <li>Javascript</li>
+            <li>Phaser</li>
+          </ul>
+          <button class="modal-btn">See the project</button>
+        </article>
+        <article class="lg:col-span-1">
+          <div class="project third-project">
+            <h3>Microverse Linters Setup</h3>
+          </div>
+          <ul class="project-skills">
+            <li>Bash</li>
+          </ul>
+          <button class="modal-btn">See the project</button>
+        </article>
+        <article class="lg:col-span-1">
+          <div class="project fourth-project">
+            <h3>Course Directory</h3>
+          </div>
+          <ul class="project-skills">
+            <li>HTML</li>
+            <li>Sass</li>
+          </ul>
+          <button class="modal-btn">See the project</button>
+        </article>
+      </div>
     </section>
     <section id="about">
       <h2 class="text-2xl font-bold py-3">About me</h2>
@@ -153,11 +155,12 @@
         If you need help with developing a project or a
         feature, I would love to help you with it.
       </p>
-      <form action="" method="post" class="grid gap-3 text-gray-900">
-        <input class="p-3" type="text" name="name" id="name" placeholder="Full Name*" required" />
-        <input class="p-3" type="email" name="email" id="email" placeholder="Email*" required" />
-        <textarea class="p-3" name="message" id="message" placeholder="Message" required"></textarea>
-        <input type="submit" value="Get in Touch" class="bg-gray-900 block py-2 w-full rounded text-white" />
+      <form action="" method="post" class="grid gap-3 lg:grid-cols-2 text-gray-900">
+        <input class="p-1 lg:col-span-1" type="text" name="name" id="name" placeholder="Full Name*" required" />
+        <input class="p-1 lg:col-span-1" type="email" name="email" id="email" placeholder="Email*" required" />
+        <textarea class="p-1 lg:col-span-2" name="message" id="message" placeholder="Message*" required"></textarea>
+        <input type="submit" value="Get in Touch"
+          class="bg-gray-900 block py-2 w-full rounded text-white lg:col-span-2" />
       </form>
       <p class="text-center py-5">okbaymeron@gmail.com</p>
       <ul class="social-media-links flex justify-between">
