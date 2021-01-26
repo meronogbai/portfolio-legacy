@@ -173,11 +173,13 @@
         feature, I would love to help you with it.
       </p>
       <form name="contact" method="post" netlify class="grid gap-3 lg:grid-cols-2 text-gray-900">
-        <input class="p-1 lg:col-span-1" type="text" name="name" id="name" placeholder="Full Name*" required" />
-        <input class="p-1 lg:col-span-1" type="email" name="email" id="email" placeholder="Email*" required" />
-        <textarea class="p-1 lg:col-span-2" name="message" id="message" placeholder="Message*" required"></textarea>
-        <input type="submit" value="Get in Touch"
-          class="bg-gray-900 block py-2 w-full rounded text-white lg:col-span-2" />
+        <input class="p-1 lg:col-span-1" type="text" name="name" id="name" placeholder="Full Name*" required
+          minlength="3" maxlength="50" />
+        <input class="p-1 lg:col-span-1" type="email" name="email" id="email" placeholder="Email*" required />
+        <textarea class="p-1 lg:col-span-2" name="message" id="message" placeholder="Message*" required></textarea>
+        <button type="submit" class="bg-gray-900 block py-2 w-full rounded text-white lg:col-span-2">
+          Get in touch
+        </button>
       </form>
       <p class="text-center py-5">okbaymeron@gmail.com</p>
       <ul class="social-media-links flex justify-between lg:justify-center lg:gap-3">
