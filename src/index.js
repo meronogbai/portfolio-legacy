@@ -46,9 +46,11 @@ modalBtns.forEach(modalBtn => {
     const modal = document.createElement('div');
     modal.classList = 'bg-white w-10/12 p-3 rounded relative';
     const modalBody = modalBtn.parentElement.querySelector('div.project');
+    modalBody.classList.add('mt-3');
     const modalSkills = modalBtn.parentElement.querySelector('ul.project-skills');
     const closeBtn = document.createElement('button');
-    closeBtn.innerHTML = '<i class="fas fa-window-close fa-lg text-blue-800 absolute top-0 right-0"></i>';
+    closeBtn.classList = 'absolute top-0 right-0 text-blue-800';
+    closeBtn.innerHTML = '<i class="fas fa-window-close fa-lg"></i>';
     closeBtn.addEventListener('click', () => {
       modalBg.remove();
     });
