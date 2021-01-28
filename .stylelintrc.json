@@ -21,5 +21,8 @@
       }
     ],
     "csstree/validator": true
-  }
+  },
+  "ignoreFiles": [
+    "dist/*.css"
+  ]
 }
