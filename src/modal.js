@@ -40,9 +40,8 @@ export default (modalBtns) => {
       const modalBg = document.createElement('div');
       modalBg.classList = 'fixed inset-0 bg-gray-200 bg-opacity-70 flex justify-center items-center';
       const modal = document.createElement('div');
-      modal.classList = 'bg-white w-10/12 p-3 rounded relative';
+      modal.classList = 'bg-white w-10/12 p-3 pt-7 rounded relative';
       const modalBody = modalBtn.parentElement.querySelector('div.project');
-      modalBody.classList.add('mt-3');
       const modalSkills = modalBtn.parentElement.querySelector('ul.project-skills');
       const closeBtn = document.createElement('button');
       closeBtn.classList = 'absolute top-0 right-0 text-blue-800';
