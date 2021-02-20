@@ -29,12 +29,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         use: [
           MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              url: false,
-            },
-          },
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {
