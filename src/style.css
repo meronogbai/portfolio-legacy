@@ -21,19 +21,27 @@ section {
 /* Projects */
 
 .first-project {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/first-app.jpg');
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
+    url('https://raw.githubusercontent.com/meronokbay/manga-central/main/public/app_screenshot.jpg');
 }
 
 .second-project {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/second-app.jpg');
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
+    url('https://raw.githubusercontent.com/meronokbay/group-payments/master/app_screenshot.jpg');
 }
 
 .third-project {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/third-app.png');
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
+    url('https://raw.githubusercontent.com/meronokbay/panda-runner/main/app_screenshot.jpg');
 }
 
 .fourth-project {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url('assets/fourth-app.jpg');
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
+    url('https://raw.githubusercontent.com/meronokbay/microverse-linters-setup/main/app_screenshot.png');
 }
 
 .project {

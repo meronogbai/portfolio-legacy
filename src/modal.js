@@ -4,21 +4,21 @@ const injectDetails = (modalBody) => {
   let githubLink;
   let content;
   if (modalBody.classList.contains('first-project')) {
+    externalLink = 'http://manga-central.netlify.app/';
+    githubLink = 'https://github.com/meronokbay/manga-central';
+    content = 'An SPA that lets you view and search Asian comics (manga) by fetching data from Jikan API.';
+  } else if (modalBody.classList.contains('second-project')) {
     externalLink = 'https://group-payments.herokuapp.com/';
     githubLink = 'https://github.com/meronokbay/group-payments';
     content = 'Group Payments is a web app that allows you to group payments with your friends and family.';
-  } else if (modalBody.classList.contains('second-project')) {
+  } else if (modalBody.classList.contains('third-project')) {
     externalLink = 'https://meronokbay.github.io/panda-runner/';
     githubLink = 'https://github.com/meronokbay/panda-runner';
     content = 'Panda Runner is a game where you play the role of a panda and collect as many coins as you can before falling over a platform or getting hurt.';
-  } else if (modalBody.classList.contains('third-project')) {
+  } else if (modalBody.classList.contains('fourth-project')) {
     externalLink = 'https://github.com/meronokbay/microverse-linters-setup/blob/main/setup_linters';
     githubLink = 'https://github.com/meronokbay/microverse-linters-setup';
     content = 'This is a bash script that lets you install and setup linters quickly for the programming languages used in the Microverse curriculum.';
-  } else if (modalBody.classList.contains('fourth-project')) {
-    externalLink = 'https://meronokbay.github.io/course-directory/';
-    githubLink = 'https://github.com/meronokbay/course-directory';
-    content = 'This project is a directory of hot online coding courses. This project is built to demonstrate mastery of HTML and CSS.';
   }
   details.innerHTML = `
   <p class="py-3">${content}</p>
