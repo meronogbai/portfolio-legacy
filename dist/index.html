@@ -15,7 +15,7 @@
 </head>
 
 <body class="text-gray-900">
-  <nav class="flex justify-between items-center px-6 py-3 bg-white fixed top-0 left-0 right-0">
+  <nav class="flex justify-between items-center px-6 py-3 bg-white fixed top-0 left-0 right-0 z-10">
     <a href="#">
       <i class="fas fa-laptop-code fa-2x text-blue-800"></i>
     </a>
@@ -73,47 +73,8 @@
     </section>
     <section id="projects">
       <h2 class="text-2xl font-bold py-3">Projects</h2>
-      <div class="grid lg:grid-cols-2 lg:gap-3">
-        <article class="lg:col-span-1">
-          <div class="project first-project">
-            <h3>Manga Central</h3>
-          </div>
-          <ul class="project-skills">
-            <li>React</li>
-            <li>Redux</li>
-            <li>CSS</li>
-          </ul>
-          <button class="modal-btn">See the project</button>
-        </article>
-        <article class="lg:col-span-1">
-          <div class="project second-project">
-            <h3>Group Payments</h3>
-          </div>
-          <ul class="project-skills">
-            <li>Rails</li>
-            <li>Bootstrap</li>
-          </ul>
-          <button class="modal-btn">See the project</button>
-        </article>
-        <article class="lg:col-span-1">
-          <div class="project third-project">
-            <h3>Panda Runner</h3>
-          </div>
-          <ul class="project-skills">
-            <li>Javascript</li>
-            <li>Phaser</li>
-          </ul>
-          <button class="modal-btn">See the project</button>
-        </article>
-        <article class="lg:col-span-1">
-          <div class="project fourth-project">
-            <h3>Microverse Linters Setup</h3>
-          </div>
-          <ul class="project-skills">
-            <li>Bash</li>
-          </ul>
-          <button class="modal-btn">See the project</button>
-        </article>
+      <div class="loading py-6 text-center">
+        <i class="fas fa-circle-notch fa-spin fa-10x"></i>
       </div>
     </section>
     <section id="about">
@@ -147,11 +108,13 @@
           <h3>Frameworks</h3>
           <ul>
             <li>Rails</li>
+            <li>React</li>
             <li>Bootstrap</li>
             <li>TailwindCSS</li>
           </ul>
           <h3>Tools</h3>
           <ul>
+            <li>Redux</li>
             <li>Sass</li>
             <li>RSpec</li>
             <li>Webpack</li>
