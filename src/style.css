@@ -22,48 +22,6 @@ section:not(#contact) {
   @apply text-blue-800;
 }
 
-/* Projects */
-
-.first-project {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
-    url('https://raw.githubusercontent.com/meronokbay/manga-central/main/public/app_screenshot.jpg');
-}
-
-.second-project {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
-    url('https://raw.githubusercontent.com/meronokbay/group-payments/master/app_screenshot.jpg');
-}
-
-.third-project {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
-    url('https://raw.githubusercontent.com/meronokbay/panda-runner/main/app_screenshot.jpg');
-}
-
-.fourth-project {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%),
-    url('https://raw.githubusercontent.com/meronokbay/microverse-linters-setup/main/app_screenshot.png');
-}
-
-.project {
-  @apply p-3 h-48 bg-center bg-cover bg-no-repeat rounded mb-3;
-}
-
-.project h3 {
-  @apply font-extrabold text-white text-xl;
-}
-
-.project-skills li {
-  @apply bg-gray-700 text-white inline-block px-2 py-1 rounded mr-1;
-}
-
-#projects button {
-  @apply bg-blue-800 text-white text-center w-full py-2 rounded my-3;
-}
-
 /* About */
 
 #about h3 {
