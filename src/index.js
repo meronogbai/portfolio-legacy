@@ -13,3 +13,6 @@ window.addEventListener('scroll', () => {
     nav.classList.add('shadow');
   }
 });
+fetch('/.netlify/functions/fetchRepos')
+  .then(response => response.json())
+  .then(d => console.log(d));
