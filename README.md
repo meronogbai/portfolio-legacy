@@ -13,9 +13,9 @@
 - TailwindCSS
 - Webpack
 
-## Live Demo
+## Live Link
 
-[Live Demo Link](https://meronogbai.me)
+[Live Link](https://meronogbai.me)
 
 ## Prerequisites
 
@@ -30,15 +30,13 @@
 
 ## Usage
 
-1. Run `npm start` to open the project in your default browser.
-1. Edit the code and run `npm run build` to compile it before deployment.
+1. Run `netlify dev` to open the project in your default browser.
+1. Edit the code and run `npm run build` to view the changes in your browser.
 
 ## Deploy
 
-1. Setup CI/CD with [Netlify](https://www.netlify.com/products/workflow/).
-1. Execute `netlify link` to link the cli to your deployed app.
-1. Add `API_URL`, `API_TOKEN` and `USER_LOGIN` with [Github GraphQL API URL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#the-graphql-endpoint), your [Github Personal Access Token](https://github.com/settings/tokens) and Github User Name, respectively, to Netlify [environemt variables](https://docs.netlify.com/configure-builds/environment-variables/).
-1. Edit the markup in `dist/index.html` with details that's relevant to you.
+1. Execute `netlify init` to setup CI/CD with netlify, or run `netlify link` to link a deployed netlify site.
+1. Set  the values of `API_URL`, `API_TOKEN` and `USER_LOGIN` to [Github GraphQL API URL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#the-graphql-endpoint), your [Github Personal Access Token](https://github.com/settings/tokens) and Github userame, respectively, in Netlify [environemt variables](https://docs.netlify.com/configure-builds/environment-variables/).
 1. Commit and push your code to Github and enjoy your awesome portfolio website.
 
 ## Author

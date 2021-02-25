@@ -59,11 +59,5 @@ module.exports = {
       }),
     ],
   },
-  devServer: {
-    host: '0.0.0.0',
-    contentBase: path.resolve(__dirname, 'dist'),
-    watchContentBase: true,
-    open: true,
-  },
   devtool: 'source-map',
 };
