@@ -34,11 +34,11 @@ fetch('/.netlify/functions/fetchRepos')
       const tags = outputListFromTags(repo.node.repositoryTopics.edges);
       const buttons = document.createElement('div');
       buttons.innerHTML = `
-        <a target="_blank" href=${repo.node.homepageUrl} rel="noopener noreferrer">
-          <i class="fas fa-external-link-alt fa-lg text-blue-800"></i>
+        <a target="_blank" href=${repo.node.homepageUrl} rel="noopener noreferrer" title="External Link">
+          <i class="fas fa-external-link-alt fa-lg text-blue-800" aria-hidden="true"></i>
         </a>
-        <a target="_blank" href=${repo.node.url} rel="noopener noreferrer">
-          <i class="fab fa-github fa-lg text-blue-800"></i>
+        <a target="_blank" href=${repo.node.url} rel="noopener noreferrer" title="Source Code">
+          <i class="fab fa-github fa-lg text-blue-800" aria-hidden="true"></i>
         </a>
       `;
       buttons.className = 'flex gap-2 items-center';
