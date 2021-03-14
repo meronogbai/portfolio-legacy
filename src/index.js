@@ -8,7 +8,7 @@ const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
   if (window.scrollY === 0) {
     nav.classList.remove('shadow');
-  } else {
+  } else if (!nav.classList.contains('shadow')) {
     nav.classList.add('shadow');
   }
 });
@@ -20,7 +20,7 @@ fetch('/.netlify/functions/fetchRepos')
     wrapper.className = 'grid lg:grid-cols-2 gap-3';
     data.forEach(repo => {
       const project = document.createElement('article');
-      project.className = 'lg:col-span-1 rounded-md shadow-md flex flex-col justify-between';
+      project.className = 'lg:col-span-1 rounded-md shadow-md hover:shadow-lg flex flex-col justify-between';
       const image = document.createElement('div');
       image.className = 'p-3 h-48 rounded';
       image.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), no-repeat center/cover url('${repo.node.openGraphImageUrl}'`;
@@ -51,7 +51,6 @@ fetch('/.netlify/functions/fetchRepos')
       wrapper.appendChild(project);
     });
     const projects = document.querySelector('#projects');
-    const loading = document.querySelector('.loading');
-    loading.remove();
+    projects.removeChild(projects.lastElementChild);
     projects.appendChild(wrapper);
   });
