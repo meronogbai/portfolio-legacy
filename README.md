@@ -15,7 +15,6 @@
 - Javascript
 - TailwindCSS
 - GraphQL
-- Font Awesome
 - Webpack
 
 ## Live Demo
@@ -63,6 +62,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [undraw](https://undraw.co/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## 📝 License
 
