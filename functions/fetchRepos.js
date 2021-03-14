@@ -1,19 +1,22 @@
 const fetch = require('node-fetch');
 
+const { API_URL, API_TOKEN, USER_LOGIN } = process.env;
+
 exports.handler = async () => {
   try {
-    const resposne = await fetch(process.env.API_URL,
+    const response = await fetch(API_URL,
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.API_TOKEN}`,
+          Authorization: `Bearer ${API_TOKEN}`,
           'User-Agent': 'request',
         },
         body:
-        `{"query": "query FetchPinnedRepos($github_login: String!) {\\n  user(login: $github_login) {\\n    pinnedItems(first: 4) {\\n      edges {\\n        node {\\n          ... on Repository {\\n            name\\n            description\\n            homepageUrl\\n            url\\n            openGraphImageUrl\\n            repositoryTopics(first: 4) {\\n              edges {\\n                node {\\n                  topic {\\n                    name\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n","variables":{"github_login":"${process.env.USER_LOGIN}"},"operationName":"FetchPinnedRepos"}`,
+          `{"query": "query FetchPinnedRepos($github_login: String!) {\\n  user(login: $github_login) {\\n    pinnedItems(first: 4) {\\n      edges {\\n        node {\\n          ... on Repository {\\n            name\\n            description\\n            homepageUrl\\n            url\\n            openGraphImageUrl\\n            repositoryTopics(first: 4) {\\n              edges {\\n                node {\\n                  topic {\\n                    name\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n","variables":{"github_login":"${USER_LOGIN}"},"operationName":"FetchPinnedRepos"}`,
       });
-    const data = await resposne.json();
+    if (!response.ok) throw new Error(response);
+    const data = await response.json();
     return {
       statusCode: 200,
       body: JSON.stringify(data.data.user.pinnedItems.edges),
