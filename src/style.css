@@ -17,7 +17,7 @@ section:not(#contact) {
 }
 
 .btn {
-  @apply bg-blue-800 px-4 py-2 font-medium text-white rounded mt-10 mr-1 border-transparent inline-block hover:bg-white border-2 hover:border-blue-800 hover:text-blue-800;
+  @apply bg-blue-800 px-3 py-1 font-medium text-white rounded mt-10 mr-1 border-transparent inline-block hover:bg-white border-2 hover:border-blue-800 hover:text-blue-800;
 }
 
 /* Intro */
@@ -30,10 +30,6 @@ section:not(#contact) {
 
 #skills h3 {
   @apply text-xl font-semibold py-3;
-}
-
-#skills ul {
-  @apply flex gap-1 flex-wrap;
 }
 
 #skills img {
