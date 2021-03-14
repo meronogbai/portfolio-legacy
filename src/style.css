@@ -32,6 +32,10 @@ section:not(#contact) {
   @apply text-xl font-semibold py-3;
 }
 
-#skills li {
-  @apply inline-block mr-2 text-gray-800;
+#skills ul {
+  @apply flex gap-1 flex-wrap;
+}
+
+#skills img {
+  @apply h-9;
 }
