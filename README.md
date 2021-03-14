@@ -1,21 +1,26 @@
 # Portfolio
 
-> This repo hosts the code for my personal portfolio.
+> A beautiful and performant web portfolio for developers.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./dist/assets/app_screenshot.png)
 
-- I can fetch my pinned Github repositories via the Graphql Github API and display them on the portfolio site.
-- I utilized Netlify Functions (an abstraction over AWS lambda functions) to hide my Github Token and run server-side code.
+## Features
+
+- Responsive and accessible to all devices.
+- Fetch pinned Github repositories via the Graphql Github API and display them.
+- Utilize Serverless to run server-side code.
 
 ## Built With
 
 - Javascript
 - TailwindCSS
+- GraphQL
+- Font Awesome
 - Webpack
 
-## Live Link
+## Live Demo
 
-[Live Link](https://meronogbai.me)
+[Live Demo](https://meronogbai.me)
 
 ## Prerequisites
 
@@ -30,8 +35,8 @@
 
 ## Usage
 
-1. Run `netlify dev` to open the project in your default browser.
-1. Edit the code and run `npm run build` to view the changes in your browser.
+1. Spin up a local server that auto reloads when you edit and save your code by executing `netlify dev`.
+1. Execute `npm run build` when you're ready to deploy.
 
 ## Deploy
 
