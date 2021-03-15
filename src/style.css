@@ -13,7 +13,7 @@ h2 {
 }
 
 section {
-  @apply px-6 pb-6;
+  @apply px-6 pb-3;
 }
 
 section:not(#contact) {
