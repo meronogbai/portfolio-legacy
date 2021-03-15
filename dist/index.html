@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
+  <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Meta Tags -->
   <title>Meron Ogbai</title>
   <meta name="title" content="Meron Ogbai">
   <meta name="description" content="Meron's personal web portfolio.">
@@ -32,7 +31,6 @@
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
 
-  <!-- Main CSS-->
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -42,9 +40,9 @@
       <i class="fas fa-laptop-code fa-2x text-blue-800" aria-hidden="true"></i>
     </a>
     <div class="flex justify-end">
-      <a class="mx-2 hover:text-blue-800" href="#projects">Projects</a>
-      <a class="mx-2 hover:text-blue-800" href="#skills">Skills</a>
-      <a class="mx-2 hover:text-blue-800" href="#contact">Contact</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </div>
   </nav>
   <main class="mt-2">
@@ -62,7 +60,7 @@
             I'm currently looking for new opportunities, so if you
             like what you see, please contact me.
           </p>
-          <ul class="social-media-links flex justify-between lg:justify-start lg:gap-5">
+          <ul class="social-media-links lg:justify-start">
             <li>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/meronokbay" title="Github">
                 <i class="fab fa-lg fa-github" aria-hidden="true"></i>
@@ -109,7 +107,7 @@
       </div>
     </section>
     <section id="skills">
-      <h2 class="text-2xl font-bold py-3">Skills</h2>
+      <h2>Skills</h2>
       <div class="lg:grid lg:grid-cols-3">
         <div class="lg:col-span-1">
           <h3>Languages</h3>
@@ -210,18 +208,14 @@
       </div>
     </section>
     <section id="contact" class="bg-blue-800 text-white mt-9 text-center">
-      <h2 class="text-2xl pt-6 font-bold">
-        Contact Me
-      </h2>
-      <div class="py-3">
-        <p>
-          Do you need help with developing a product/feature or just say hi?
-        </p>
-        <p>
-          My inbox is always open for you.
-        </p>
-      </div>
-      <form name="contact" method="post" netlify class="grid gap-3 lg:grid-cols-2 text-gray-900">
+      <h2>Contact Me</h2>
+      <p>
+        Do you need help with developing a product/feature or just say hi?
+      </p>
+      <p>
+        My inbox is always open for you.
+      </p>
+      <form name="contact" method="post" netlify class="grid gap-3 lg:grid-cols-2 text-gray-900 pt-3">
         <input class="p-1 lg:col-span-1" type="text" name="name" id="name" placeholder="Full Name" required
           minlength="3" maxlength="50" aria-label="Full Name" />
         <input class="p-1 lg:col-span-1" type="email" name="email" id="email" placeholder="Email" required
@@ -233,7 +227,7 @@
         </button>
       </form>
       <p class="py-5">okbaymeron@gmail.com</p>
-      <ul class="social-media-links flex justify-between lg:justify-center lg:gap-3">
+      <ul class="social-media-links lg:justify-center">
         <li>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/meronokbay" title="Github">
             <i class="fab fa-lg fa-github" aria-hidden="true"></i>
@@ -263,7 +257,7 @@
     </section>
   </main>
   <footer class="bg-gray-900 text-white text-center py-3">
-    Made with <i class="fas fa-heart text-blue-800" aria-hidden="true"></i> by Meron Ogbai
+    Made with <i class="fas fa-heart text-red-500" aria-hidden="true"></i> by Meron Ogbai
   </footer>
   <script src="bundle.js"></script>
 </body>
