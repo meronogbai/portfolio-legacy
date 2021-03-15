@@ -7,8 +7,8 @@
 ## Features
 
 - Responsive and accessible to all devices.
-- Fetch pinned Github repositories via the Graphql Github API and display them.
-- Utilize Serverless to run server-side code.
+- Fetch the developer's pinned Github repositories via the Graphql Github API and display them.
+- Utilize serverless functions to run server-side code.
 
 ## Built With
 
@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-[Live Demo](https://meronogbai.me)
+[Live Demo Link](https://meronogbai.me)
 
 ## Prerequisites
 
@@ -30,12 +30,11 @@
 
 1. Fork the repo and clone it.
 1. `cd` into the project directory.
-1. Run `npm install` to install the necessary dependencies.
+1. Execute `npm install` to install the necessary dependencies.
 
 ## Usage
 
-1. Spin up a local server that auto reloads when you edit and save your code by executing `netlify dev`.
-1. Execute `npm run build` when you're ready to deploy.
+Execute `netlify dev` to open the project in your default browser.
 
 ## Deploy
 
@@ -61,8 +60,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [undraw](https://undraw.co/)
 - [Font Awesome](https://fontawesome.com/)
+- [Shields IO](https://shields.io/)
+- [undraw](https://undraw.co/)
 
 ## 📝 License
 
