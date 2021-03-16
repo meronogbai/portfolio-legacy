@@ -21,7 +21,7 @@ section:not(#contact) {
 }
 
 .btn {
-  @apply bg-blue-800 px-3 py-1 font-medium text-white rounded mt-10 mr-1 border-transparent inline-block hover:bg-white border-2 hover:border-blue-800 hover:text-blue-800;
+  @apply px-3 py-1 font-medium transition-colors bg-blue-800 text-white rounded mt-10 mr-1 border-transparent inline-block hover:bg-white border-2 hover:border-blue-800 hover:text-blue-800;
 }
 
 .nav-link {
