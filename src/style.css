@@ -24,6 +24,10 @@ section:not(#contact) {
   @apply px-3 py-1 font-medium transition-colors bg-blue-800 text-white rounded mt-10 mr-1 border-transparent inline-block hover:bg-white border-2 hover:border-blue-800 hover:text-blue-800;
 }
 
+.btn-outline {
+  @apply px-3 py-1 font-medium transition-colors text-blue-800 rounded mt-10 mr-1 border-blue-800 inline-block hover:bg-blue-800 border-2 hover:text-white;
+}
+
 .nav-link {
   @apply mx-2 py-2 transition-colors border-b border-transparent hover:border-blue-800 hover:text-blue-800;
 }
