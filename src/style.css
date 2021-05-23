@@ -13,7 +13,11 @@ h2 {
 }
 
 section {
-  @apply px-6 pb-16;
+  @apply px-6 pb-3;
+}
+
+section:not(:last-child) {
+  @apply pb-16;
 }
 
 .btn {
