@@ -16,8 +16,8 @@ section {
   @apply px-6 pb-3;
 }
 
-section:not(#contact) {
-  @apply pt-16;
+section:not(:last-child) {
+  @apply pb-16;
 }
 
 .btn {
@@ -29,7 +29,7 @@ section:not(#contact) {
 }
 
 .nav-link {
-  @apply mx-2 py-2 transition-colors border-b border-transparent hover:border-blue-800 hover:text-blue-800;
+  @apply p-2 transition-colors border-b border-transparent hover:border-blue-800 hover:text-blue-800;
 }
 
 .social-media-links {
@@ -50,4 +50,8 @@ section:not(#contact) {
 
 #skills img {
   @apply h-9;
+}
+
+#skills li {
+  @apply font-medium;
 }

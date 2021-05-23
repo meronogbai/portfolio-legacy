@@ -35,30 +35,55 @@
 </head>
 
 <body class="text-gray-900">
-  <nav class="flex justify-between items-center px-6 py-3 bg-white fixed top-0 left-0 right-0 z-10">
-    <a href="#" title="Logo">
-      <i class="fas fa-laptop-code fa-2x text-blue-800" aria-hidden="true"></i>
-    </a>
-    <div class="flex justify-end">
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </div>
-  </nav>
   <main>
-    <section id="intro" class="lg:h-screen lg:flex lg:items-center">
-      <div class="grid lg:grid-cols-2">
+    <section id="intro" class="lg:h-screen">
+      <nav>
+        <div class="py-3 md:flex md:justify-between md:items-center">
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#" title="Logo">
+                <i class="fas fa-laptop-code fa-2x text-blue-800 py-3" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex md:hidden">
+              <button type="button" id="menu-btn"
+                class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                aria-label="toggle menu">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div class="items-center md:flex hidden" id="menu">
+            <div class="flex flex-col md:flex-row">
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://meronogbai.medium.com">
+                Blog
+              </a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="grid lg:grid-cols-2 pt-12">
         <div class="lg:col-span-1">
-          <h1 class="text-4xl md:text-5xl font-semibold pt-24
+          <h1 class="text-4xl md:text-5xl font-semibold md:pt-24
           text-blue-800">
             Hi, I'm Meron <i class="far fa-smile" aria-hidden="true"></i>
           </h1>
           <p class="py-6">
             I've built complex full-stack web applications that meet
             business specifications, scripts that reduce 20-minute workflows
-            to a few seconds and even published articles with 3.5k+ views.
-            I'm currently looking for new opportunities, so if you
-            like what you see, please contact me.
+            to a few seconds and even published articles with thousands of views.
+            Contact me if you need help with implementing a feature or product.
           </p>
           <ul class="social-media-links lg:justify-start">
             <li>
@@ -96,8 +121,8 @@
             Get Resume
           </a>
         </div>
-        <img class="hidden lg:block lg:col-span-1 w-full h-auto" src="assets/hero.svg" alt="Hero image" width="1076px"
-          height="755px">
+        <img class="hidden lg:block lg:col-span-1 w-full h-auto" src="assets/hero.svg" alt="Hero image" width="1076"
+          height="755">
       </div>
     </section>
     <section id="projects">
@@ -112,102 +137,41 @@
         <div class="lg:col-span-1">
           <h3>Languages</h3>
           <ul>
-            <li>
-              <img src="https://img.shields.io/badge/-ruby-white?logo=ruby&logoColor=1E40AF&style=for-the-badge"
-                alt="Ruby">
-            </li>
-            <li>
-              <img
-                src="https://img.shields.io/badge/-javascript-white?logo=javascript&logoColor=1E40AF&style=for-the-badge"
-                alt="Javascript">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-bash-white?logo=gnu-bash&logoColor=1E40AF&style=for-the-badge"
-                alt="Bash">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-html-white?logo=html5&logoColor=1E40AF&style=for-the-badge"
-                alt="HTML">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-css-white?logo=css3&logoColor=1E40AF&style=for-the-badge"
-                alt="CSS">
-            </li>
+            <li>TypeScript/JavaScript</li>
+            <li>Ruby</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
           </ul>
         </div>
         <div class="lg:col-span-1">
           <h3>Frameworks</h3>
           <ul>
-            <li>
-              <img
-                src="https://img.shields.io/badge/-rails-white?logo=ruby-on-rails&logoColor=1E40AF&style=for-the-badge"
-                alt="Rails">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-react-white?logo=react&logoColor=1E40AF&style=for-the-badge"
-                alt="React">
-            </li>
-            <li>
-              <img
-                src="https://img.shields.io/badge/-bootstrap-white?logo=bootstrap&logoColor=1E40AF&style=for-the-badge"
-                alt="Bootstrap">
-            </li>
-            <li>
-              <img
-                src="https://img.shields.io/badge/-tailwindcss%20-white?logo=tailwind-css&logoColor=1E40AF&style=for-the-badge"
-                alt="TailwindCSS">
-            </li>
+            <li>Express/Node.js</li>
+            <li>Rails</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>TailwindCSS</li>
           </ul>
         </div>
         <div class="lg:col-span-1">
           <h3>Tools</h3>
           <ul>
-            <li>
-              <img src="https://img.shields.io/badge/-redux-white?logo=redux&logoColor=1E40AF&style=for-the-badge"
-                alt="Redux">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-webpack-white?logo=webpack&logoColor=1E40AF&style=for-the-badge"
-                alt="Webpack">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-jest-white?logo=jest&logoColor=1E40AF&style=for-the-badge"
-                alt="Jest">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-sass-white?logo=sass&logoColor=1E40AF&style=for-the-badge"
-                alt="Sass">
-            </li>
-            <li>
-              <img
-                src="https://img.shields.io/badge/-postgresql-white?logo=postgresql&logoColor=1E40AF&style=for-the-badge"
-                alt="PostgreSQL">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-graphql-white?logo=graphql&logoColor=1E40AF&style=for-the-badge"
-                alt="GraphQL">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-git-white?logo=git&logoColor=1E40AF&style=for-the-badge"
-                alt="Git">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-heroku-white?logo=heroku&logoColor=1E40AF&style=for-the-badge"
-                alt="Heroku">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-netlify-white?logo=netlify&logoColor=1E40AF&style=for-the-badge"
-                alt="Netlify">
-            </li>
-            <li>
-              <img src="https://img.shields.io/badge/-linux-white?logo=linux&logoColor=1E40AF&style=for-the-badge"
-                alt="Linux">
-            </li>
+            <li>Redux</li>
+            <li>Webpack</li>
+            <li>Jest</li>
+            <li>Sass</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+            <li>Linux</li>
           </ul>
         </div>
       </div>
     </section>
-    <section id="contact" class="bg-blue-800 text-white mt-16 text-center">
+    <section id="contact" class="bg-blue-800 text-white text-center">
       <h2>Contact Me</h2>
       <p>
         Do you need help with developing a product/feature or just say hi?
