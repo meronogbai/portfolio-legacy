@@ -51,3 +51,7 @@ section:not(:last-child) {
 #skills img {
   @apply h-9;
 }
+
+#skills li {
+  @apply font-medium;
+}
