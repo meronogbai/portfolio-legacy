@@ -1,6 +1,6 @@
 import fetchRepos from './api/fetchRepos';
 import displayRepos from './components/displayRepos';
-import './utils/setupNavbar'
+import './utils/setupNavbar';
 import './style.css';
 
 const projects = document.querySelector('#projects');
