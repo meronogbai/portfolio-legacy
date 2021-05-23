@@ -13,7 +13,7 @@ exports.handler = async () => {
           'User-Agent': 'request',
         },
         body:
-          `{"query": "query FetchPinnedRepos($github_login: String!) {\\n  user(login: $github_login) {\\n    pinnedItems(first: 4) {\\n      edges {\\n        node {\\n          ... on Repository {\\n            name\\n            description\\n            homepageUrl\\n            url\\n            openGraphImageUrl\\n            repositoryTopics(first: 4) {\\n              edges {\\n                node {\\n                  topic {\\n                    name\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n","variables":{"github_login":"${USER_LOGIN}"},"operationName":"FetchPinnedRepos"}`,
+          `{"query": "query FetchPinnedRepos($github_login: String!) {\\n  user(login: $github_login) {\\n    pinnedItems(first: 6) {\\n      edges {\\n        node {\\n          ... on Repository {\\n            name\\n            description\\n            homepageUrl\\n            url\\n            openGraphImageUrl\\n            repositoryTopics(first: 4) {\\n              edges {\\n                node {\\n                  topic {\\n                    name\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n","variables":{"github_login":"${USER_LOGIN}"},"operationName":"FetchPinnedRepos"}`,
       });
     if (!response.ok) throw new Error(response);
     const data = await response.json();
