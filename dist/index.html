@@ -35,19 +35,42 @@
 </head>
 
 <body class="text-gray-900">
-  <nav class="flex justify-between items-center px-6 py-3 bg-white fixed top-0 left-0 right-0 z-10">
-    <a href="#" title="Logo">
-      <i class="fas fa-laptop-code fa-2x text-blue-800" aria-hidden="true"></i>
-    </a>
-    <div class="flex justify-end">
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </div>
-  </nav>
   <main>
-    <section id="intro" class="lg:h-screen lg:flex lg:items-center">
-      <div class="grid lg:grid-cols-2">
+    <section id="intro" class="lg:h-screen">
+      <nav>
+        <div class="py-3 md:flex md:justify-between md:items-center">
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#" title="Logo">
+                <i class="fas fa-laptop-code fa-2x text-blue-800" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex md:hidden">
+              <button type="button"
+                class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                aria-label="toggle menu">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div class="items-center md:flex hidden">
+            <div class="flex flex-col md:flex-row">
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="grid lg:grid-cols-2 pt-12">
         <div class="lg:col-span-1">
           <h1 class="text-4xl md:text-5xl font-semibold pt-24
           text-blue-800">
@@ -96,8 +119,8 @@
             Get Resume
           </a>
         </div>
-        <img class="hidden lg:block lg:col-span-1 w-full h-auto" src="assets/hero.svg" alt="Hero image" width="1076px"
-          height="755px">
+        <img class="hidden lg:block lg:col-span-1 w-full h-auto" src="assets/hero.svg" alt="Hero image" width="1076"
+          height="755">
       </div>
     </section>
     <section id="projects">
@@ -207,7 +230,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="bg-blue-800 text-white mt-16 text-center">
+    <section id="contact" class="bg-blue-800 text-white text-center">
       <h2>Contact Me</h2>
       <p>
         Do you need help with developing a product/feature or just say hi?

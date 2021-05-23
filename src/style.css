@@ -13,11 +13,7 @@ h2 {
 }
 
 section {
-  @apply px-6 pb-3;
-}
-
-section:not(#contact) {
-  @apply pt-16;
+  @apply px-6 pb-16;
 }
 
 .btn {
@@ -29,7 +25,7 @@ section:not(#contact) {
 }
 
 .nav-link {
-  @apply mx-2 py-2 transition-colors border-b border-transparent hover:border-blue-800 hover:text-blue-800;
+  @apply p-2 transition-colors border-b border-transparent hover:border-blue-800 hover:text-blue-800;
 }
 
 .social-media-links {
