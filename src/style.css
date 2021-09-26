@@ -47,11 +47,3 @@ section:not(:last-child) {
 #skills h3 {
   @apply text-xl font-semibold py-3;
 }
-
-#skills img {
-  @apply h-9;
-}
-
-#skills li {
-  @apply font-medium;
-}
