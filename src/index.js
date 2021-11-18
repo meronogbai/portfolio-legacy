@@ -1,12 +1,8 @@
-import fetchRepos from './api/fetchRepos';
-import displayRepos from './components/displayRepos';
-import './utils/setupNavbar';
 import './style.css';
 
-const projects = document.querySelector('#projects');
+const menu = document.querySelector('#menu');
+const menuBtn = document.querySelector('#menu-btn');
 
-fetchRepos()
-  .then(repos => {
-    projects.removeChild(projects.lastElementChild);
-    projects.appendChild(displayRepos(repos));
-  });
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
