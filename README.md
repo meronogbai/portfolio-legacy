@@ -1,6 +1,6 @@
 # Portfolio
 
-This repo hosts the code for my personal portfolio website.
+This repo hosts the code for my personal web portfolio.
 
 ## Live Demo
 
