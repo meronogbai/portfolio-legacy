@@ -1,7 +1,3 @@
 node_modules/
-# Webpack
 bundle.js*
 main.css*
-# Production
-.env
-.netlify/
