@@ -2,16 +2,12 @@
 
 This repo hosts the code for my personal web portfolio.
 
-## Live Demo
-
-[Live Demo Link](https://meronogbai.me)
-
 ## Prerequisites
 
 - nodejs
 - npm
 
-## Install
+## Setup
 
 1. Clone the repo.
 1. `cd` into the project directory.
